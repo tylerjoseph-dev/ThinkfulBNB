@@ -94,6 +94,8 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  display:flex;
+  flex-direction: column;
 }
 form div{
   display:flex;
@@ -133,3 +135,61 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width:480px){
+
+  header {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  form{
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+  }
+  form div{
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  form div label{
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  form button {
+    width: 250px
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .logo{
+    font-size: 50px;
+  }
+
+  .item {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .item-double {
+    flex: 2;
+  }
+
+  .item img {
+     width: 100% 
+  }
+
+  .about{
+    display:flex;
+    justify-content: center
+  }
+  section div{
+    align-items: center;
+  }
+}
