@@ -65,10 +65,13 @@ header {
   justify-content: center;
 }
 
+
+header nav {
+  overflow: hidden;
+}
 .logo {
   font-family: "Pangolin", cursive;
-  
-  font-size:8vw;
+  font-size:13vw;
   color: #fff;
 }
 header nav ul {
@@ -97,6 +100,7 @@ form {
   padding: 10px;
   display:flex;
   flex-direction: column;
+  overflow: hidden;
 }
 form div{
   display:flex;
